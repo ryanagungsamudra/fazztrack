@@ -1,0 +1,51 @@
+.auth-bg {
+    background: url(../img/login_background.png) no-repeat;
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    flex: 0.5;
+}
+.auth-form {
+    height: 100%;
+    flex-direction: column;
+    flex: 0.5;
+}
+.navbar {
+    display: flex;
+    flex: 0.2;
+    height: 40px;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.text-account {
+    position: relative;
+    text-align: center;
+    top: -20px;
+    background: white;
+    width: 40%;
+    margin: auto;
+}
+
+/* modification */
+.signup-size {
+    font-size: 16px;
+    font-weight: 500;
+}
+.login-size {
+    font-weight: 700;
+    font-size: 35px;
+}
+.forgot-size {
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.login2-size {
+    font-weight: 700;
+    font-size: 20px;
+}
+.google-login {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
