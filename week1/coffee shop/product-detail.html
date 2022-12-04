@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap v5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/product-detail.css">
+
+    <title>Product Detail</title>
+    <link rel="icon" type="image/x-icon" href="../coffee shop/img/coffeeLogo.svg">
+</head>
+<body>
+
+    <!-- Navbar Start -->
+    <header class="border-bottom border-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg my-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/coffeeLogo.svg" alt="logo" class="pb-2">
+                        <p class="d-inline ps-2">YANNN COFFEE</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active mx-2" href="product.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="yourcart.html">Your Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="history.html">History</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-lg-flex">
+                        <a href="#" target="_blank">
+                            <img src="../coffee shop/img/product/search.svg" alt="Facbook">
+                        </a>
+                        <a class="mx-4" href="#" target="_blank">
+                            <img src="../coffee shop/img/product/chat.svg" alt="Twitter">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="../coffee shop/img/product/profilepic.svg" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    <main>
+        <div class="container-fluid" style="background-color: #EFEEEE; padding-bottom: 60px;">
+            <div class="container">
+                <div class="row">
+                    <!-- LEFT CONTENT -->
+                    <div class="col text-center">
+                        <nav class="nav">
+                            <a class="tab-link" aria-current="page" href="product.html">Favorite & Promo</a>
+                            <a class="tab-link active" href="product-detail.html">> Cold Brew</a>
+                        </nav>
+                        
+                        <div class="hero"></div>
+                        <h1 class="s-1" style="margin-right: 40px;">COLD BREW</h1>
+                        <h5 class="s-2" style="margin-right: 30px;">IDR 30.000</h5>
+
+                        <button class="btn btn-primary mt-4" style="margin-right: 33px; padding: 15px 100px;">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning mt-4" style="margin-right: 33px; padding: 15px 105px; margin-bottom: 150px;">
+                            Ask a Staff
+                        </button>
+                    </div>
+                    <!-- RIGHT CONTENT -->
+                    <div class="col">
+                        <div class="container rounded-4" style="background-color: #FFFFFF; height: 540px; width: 540px; margin-top: 80px;">
+                            <p class="s-3" >Delivery only on <b>Monday to <br>friday</b> at <b>1-7 pm</b></p>
+                            <p class="s-4">Cold brewing is a method of <br>brewing that combines ground <br>coffee and cool water and uses <br>time instead of heat to extract the <br>flavor. It is brewed in small batches <br>and steeped for as long as 48 <br>hours.</p>
+                            <p class="s-5">Choose a size</p>
+                        </div>
+                        <div class="container text-center mt-5">
+                            
+                            <h5 class="s-6">Choose Delivery Methods</h5>
+                            
+                            <button class="btn btn-secondary mt-3">Dine in</button>
+                            <button class="btn btn-light mx-3 mt-3">Door Delivery</button>
+                            <button class="btn btn-light mt-3">Pick up</button>
+
+                            <div class="set-time">
+                                <div class="mb-3 mt-4 w-70">
+                                    <label for="exampleFormControlInput1" class="form-label">Set time :</label>
+                                    <input type="Set time" class="form-control" id="set-time" placeholder="Enter the time you’ll arrived">
+                                </div>
+                            </div>
+                            
+
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container-fluid" style="background-color: #F8F8F8; height: 528px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 pt-footer">
+                        <a href="index.html">
+                            <img src="img/coffeeLogo.svg" alt="logo" class="pb-2">
+                            <p class="d-inline ps-2"
+                                style="text-decoration: none; color: #0B132A; font-size: 20px; font-weight: 700;">YANNN
+                                COFFEE</p>
+                        </a>
+                        <p class="mt-3" style="font-size: 16px; font-weight: 500; color: #4F5665;">
+                            Coffee Shop is a store that sells some good <br>meals, and especially coffee. We provide
+                            <br>high quality beans
+                        </p>
+                        <div class="d-lg-flex">
+                            <a href="https://www.facebook.com/ryanagungsamudra/" target="_blank"
+                                style="margin-left: -20px;">
+                                <img src="../coffee shop/img/homepage/Facebook.svg" alt="Facbook">
+                            </a>
+                            <a href="https://mobile.twitter.com/ryansamudra67" target="_blank" style="margin-left: -15px;">
+                                <img src="../coffee shop/img/homepage/Twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="https://instagram.com/ryanagungsamudra/" target="_blank" style="margin-left: -15px;">
+                                <img src="../coffee shop/img/homepage/Instagram.svg" alt="Instagram">
+                            </a>
+                        </div>
+    
+                        <p style="color: #AFB5C0; font-size: 16px; font-weight: 400;">©2022CoffeeStore</p>
+                    </div>
+                    <div class="col-2 pt-footer">
+                        <h5 class="mb-4">Product</h5>
+                        <a href="#">
+                            <p>Download</p>
+                        </a>
+                        <a href="#">
+                            <p>Pricing</p>
+                        </a>
+                        <a href="#">
+                            <p>Locations</p>
+                        </a>
+                        <a href="#">
+                            <p>Countries</p>
+                        </a>
+                        <a href="#">
+                            <p>Blog</p>
+                        </a>
+                    </div>
+                    <div class="col-2 pt-footer">
+                        <h5 class="mb-4">Engage</h5>
+                        <a href="#">
+                            <p>Coffe Shop ?</p>
+                        </a>
+                        <a href="#">
+                            <p>FAQ</p>
+                        </a>
+                        <a href="#">
+                            <p>About Us</p>
+                        </a>
+                        <a href="#">
+                            <p>Privacy Policy</p>
+                        </a>
+                        <a href="#">
+                            <p>Terms of Service</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    
+        <!-- info panel footer start -->
+        <div class="container">
+            <div class="row info-panel-footer">
+                <div class="col">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <img src="img/product-detail/hero-small.png" alt="" style="padding-top: 14px; margin-left: -45px;">
+                            </div>
+                            <div class="col" style="margin-left: -250px; padding-top: 13px;">
+                                <h3 class="s-7">COLD BREW</h3>
+                                <h5 class="s-8">x1 (Large)</h5>
+                                <h5 class="s-8">x1 (Regular)</h5>
+                            </div>
+                            <div class="col" style="margin-right: -225px; margin-top: 30px;">
+                                <img src="" alt="">
+                                <p class="s-7">2</p>
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row info-panel-button">
+                <div class="col">
+                    <a href="yourcart.html"><button class="btn btn-warning footer">CHECKOUT</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- info panel footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* Navbar Start*/
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+    color: #0B132A;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    font-size: 16px;
+    color: #6A4029;
+}
+
+.nav-link {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4F5665;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #6A4029;
+}
+
+a {
+    text-decoration: none;
+}
+/* Navbar End */
+
+/* Footer Start */
+.pt-footer {
+    margin-top: 110px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* Footer End */
+
+/* Main start */
+.hero {
+    background-image: url(../img/history/hero.png);
+    background-size: cover;
+    height: 1160px;
+}
+.card-style {
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+}
+.img-product {
+    width: 170px; height: 170px;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+/* Main end */
+
+/* Styling start */
+.s-1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000000;
+    margin-left: -18px;
+}
+.s-2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #895537;
+    margin-left: -18px;
+    line-height: 20px;
+}
+.s-3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #6A4029;
+    margin-left: -18px;
+    line-height: 0px;
+}
+.s-4 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+.s-5 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+.select-all a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+.select-all a p {
+    margin-right: 40px;
+}
+/* Styling end */
