@@ -24,6 +24,21 @@ body {
 a {
     text-decoration: none;
 }
+.btn.btn-warning.get-started {
+    width: 250px;
+    height: 60px;
+}
+.btn.btn-warning.sign-up {
+    width: 150px;
+    height: 45px;
+    background-color: #FFBA33;
+    border-radius: 50px;
+}
+.btn.btn-warning:hover {
+    background-color: #6A4029;
+    border-color: #6A4029;
+    color: #FFFFFF;
+}
 
 /* SECTION 1 */
 .hero-1 {
@@ -70,6 +85,12 @@ a {
     font-weight: 400;
     font-size: 20px;
     color: #4F5665;
+}
+.vertical-line {
+    border-left: 3px solid #EEEFF2;
+    height: 125px;
+    margin-top: -113px;
+    margin-left: -100px;
 }
 
 /* SECTION 2 */
@@ -153,6 +174,7 @@ a {
     width: 200px;
     border-radius: 50%;
     border: 7px solid #6A4029;
+    opacity: 105%;
 }
 .content {
     font-size: 18px;
@@ -163,7 +185,8 @@ a {
 .content p span {
     font-size: 48px;
     margin-right: 20px;
-    color: #6A4029;
+    color:#FFBA33;
+    opacity: 75%;
 }
 .socials i {
     margin-right: 25px;
@@ -173,7 +196,7 @@ a {
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-    background-color: #6A4029;
+    background-color:#FFBA33;
 }
 /* CAROUSEL SLIDING END */
 

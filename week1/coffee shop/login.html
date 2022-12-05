@@ -1,72 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/auth.css">
-    <link rel="stylesheet" href="css/global.css">
-    <title>Login Page</title>
+
+    <!-- Bootstrap v5.2 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="img/coffeeLogo.svg">
 </head>
+
 <body>
-    <main class="container">
-        <section class="auth-bg"></section>
-        <section class="auth-form">
-            <nav class="container navbar">
-                <div class="brand">
-                    <img src="img/coffeeLogo.svg" alt="logo" width="20" height="20">
-                    <h3>
-                        <a href="index.html" style="text-decoration:none; color:#0B132A;">
-                        YANNN COFFEE</a>
-                    </h3>
+
+    <!-- Main Start -->
+    <main>
+        <div class="row">
+            <!-- LEFT SIDE -->
+            <div class="col">
+                <div class="bg-primary text-white hero"></div>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="col">
+
+                <div class="row">
+                    <div class="col">
+                        <!-- navbar start -->
+                        <div class="container mt-5">
+                            <nav class="navbar navbar-expand-lg my-4">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand" href="index.html">
+                                        <img src="img/coffeeLogo.svg" alt="logo" class="pb-2">
+                                        <p class="d-inline ps-2 s-lg" style="font-size: 20px; color: #0B132A;">YANNN COFFEE</p>
+                                    </a>
+                                    <a href="signup.html">
+                                        <div class="btn btn-warning signup-nav rounded-pill px-4 py-2 s-md" style="font-size: 16px;"><p style="margin-top: 2px;">Sign Up</p></div>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- navbar end -->
+                    </div>
                 </div>
-                <button class="btn btn-primary rounded-full text-secondary signup-size">
-                    <a href="signup.html" style="text-decoration:none; color:#6A4029;">
-                        Sign Up</a>
-                </button>
-            </nav>
-            <div>
-                <h3 class="text-center text-secondary login-size">Login</h3>
-                <form class="p-50">
-                    <div class="mb-5">
-                        <label class="form-label" for="email-input">
-                            Email Address
-                        </label>
-                        <input class="form-input rounded-xl" id="email-input" type="email" placeholder="example: johnson@gmail.com">
+
+                <div class="container w-75">
+                    <div class="row">
+                        <div class="col text-center s-lg pt-5" style="font-size: 35px; color: #6A4029; margin-top: 50px; margin-bottom: 60px;">
+                            <h3>Login</h3>
+                        </div>
                     </div>
-                    <div class="mb-5">
-                        <label class="form-label" for="password-input">
-                            Password
-                        </label>
-                        <input class="form-input rounded-xl" type="password" placeholder="example: ******">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label s-md" style="font-size: 20px; color: #4F5665;">Email Address :</label>
+                            <input type="email" class="form-control py-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email adress">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label s-md" style="font-size: 20px; color: #4F5665;">Password :</label>
+                            <input type="password" class="form-control py-3" id="exampleInputPassword1" placeholder="Enter your password">
+                        </div>
+                        <div class="mb-3 form-check">
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col">
+                            <a href="forgotpassword.html" class="s-lg" style="font-size: 20px; color: #6A4029;"><p style="margin-top: -45px;">Forgot password?</p></a>
+                        </div>
                     </div>
-                    <a href="forgotpassword.html"><h3 class="text-secondary forgot-size">Forgot Password?</h3></a>
-                    <button class="btn btn-primary rounded-full btn-block mb-5 text-secondary login2-size">
-                        Login
-                    </button>
-                    <div>
-                        <button class="btn btn-danger rounded-full btn-block mb-5 google-login">
-                            <img src="img/googleLogo.svg" alt="logo">
-                            Login with Google
-                        </button>
+                    <div class="row">
+                        <div class="col mt-5">
+                            <div class="btn btn-warning d-flex rounded-4 s-lg py-4" style="font-size: 20px;"><span style="margin: auto;">Login</span></div>
+                        </div>
                     </div>
-                </form>
+                    <div class="row">
+                        <div class="col mt-4">
+                            <div class="btn btn-light d-flex rounded-4">
+                                <img src="img/login/googleLogo.svg" alt="google" style="margin-left: 120px;">
+                                <p class="s-1" style="margin-top: 19px; margin-left: 10px;">Login with Google</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
-        <!-- <section class="auth-card">
-            <div class="leftcontent">
-                <h3>Get your member card now!</h3>
-                <p>Let's join with our member and enjoy the deals.</p>
-            </div>
-            <div class="rightcontent">
-                <button>
-                    Create Now
-                </button>
-            </div>
-        </section> -->
+        </div>
     </main>
+    <!-- Main End -->
+        
+    <!-- Footer Start -->
+    <footer>
+        <div class="container-fluid" style="background-color: #F8F8F8; height: 528px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 pt-footer">
+                        <a href="index.html">
+                            <img src="img/coffeeLogo.svg" alt="logo" class="pb-2">
+                            <p class="d-inline ps-2"
+                                style="text-decoration: none; color: #0B132A; font-size: 20px; font-weight: 700;">YANNN
+                                COFFEE</p>
+                        </a>
+                        <p class="mt-3" style="font-size: 16px; font-weight: 500; color: #4F5665;">
+                            Coffee Shop is a store that sells some good <br>meals, and especially coffee. We provide
+                            <br>high quality beans
+                        </p>
+                        <div class="d-lg-flex">
+                            <a href="https://www.facebook.com/ryanagungsamudra/" target="_blank"
+                                style="margin-left: -20px;">
+                                <img src="img/Facebook.svg" alt="Facbook">
+                            </a>
+                            <a href="https://mobile.twitter.com/ryansamudra67" target="_blank" style="margin-left: -15px;">
+                                <img src="img/Twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="https://instagram.com/ryanagungsamudra/" target="_blank" style="margin-left: -15px;">
+                                <img src="img/Instagram.svg" alt="Instagram">
+                            </a>
+                        </div>
+    
+                        <p style="color: #AFB5C0; font-size: 16px; font-weight: 400;">©2022CoffeeStore</p>
+                    </div>
+                    <div class="col-2 pt-footer">
+                        <h5 class="mb-4">Product</h5>
+                        <a href="#">
+                            <p>Download</p>
+                        </a>
+                        <a href="#">
+                            <p>Pricing</p>
+                        </a>
+                        <a href="#">
+                            <p>Locations</p>
+                        </a>
+                        <a href="#">
+                            <p>Countries</p>
+                        </a>
+                        <a href="#">
+                            <p>Blog</p>
+                        </a>
+                    </div>
+                    <div class="col-2 pt-footer">
+                        <h5 class="mb-4">Engage</h5>
+                        <a href="#">
+                            <p>Coffe Shop ?</p>
+                        </a>
+                        <a href="#">
+                            <p>FAQ</p>
+                        </a>
+                        <a href="#">
+                            <p>About Us</p>
+                        </a>
+                        <a href="#">
+                            <p>Privacy Policy</p>
+                        </a>
+                        <a href="#">
+                            <p>Terms of Service</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+        <!-- info panel footer start -->
+        <div class="container">
+            <div class="row info-panel-footer">
+                <div class="col">
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h4 class="typo-primary s-md" style="font-size: 35px; color: #0B132A;">Get your member <br>card now!</h4>
+                                    <p class="typo-secondary s-sm" style="font-size: 16px; color: #4F5665;">Let's join with our member and enjoy the deals.</p>
+                                </div>
+                                <div class="col">
+                                    <a href="#"><button class="btn btn-warning rounded-4  px-5 py-3 s-lg" style="font-size: 16px;">Create Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- info panel footer end -->
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
