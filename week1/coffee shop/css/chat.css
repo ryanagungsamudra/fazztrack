@@ -1,3 +1,7 @@
+.check {
+    border: 3px solid black;
+    height: 140vh;
+}
 /* Navbar Start*/
 body {
     font-family: 'Rubik', sans-serif;
@@ -52,6 +56,36 @@ a {
 }
 
 /* Navbar End */
+
+/* Main Start */
+.hero {
+    background-image: url(../img/chat&roomchat/hero.jpg);
+    background-size: cover;
+    background-position-x: center;
+    height: 165vh;
+    width: 100vw;
+}
+.container-1 {
+    border-radius: 20px;
+}
+.container-2 {
+    height: 140vh;
+    background-color: #6A4029;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.container-3 {
+    height: 140vh;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-control {
+    background-color: #EFEEEE;
+    border-radius: 20px;
+    height: 3rem;
+}
+/* Main End */
 
 /* Footer Start */
 .pt-footer {
