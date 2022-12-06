@@ -70,6 +70,15 @@ a {
     text-align: center;
     color: #000000;
 }
+.popup:hover {
+    transform: scale(1.2);
+    transition-delay: 100ms;
+    transition-duration: 0.4s;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 /* Main End */
 
 /* styling start*/
