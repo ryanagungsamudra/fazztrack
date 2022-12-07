@@ -1,7 +1,17 @@
+@media screen and (max-width : 576px) {
+    body {
+        overflow-x: hidden;
+    }
+    .hero-1 {
+        background-position-x: -48rem;
+    }
+}
+
 /* Navbar */
 body {
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
+    
 }
 .navbar-brand {
     font-weight:700;
@@ -24,6 +34,10 @@ body {
 a {
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 .btn.btn-warning.get-started {
     width: 250px;
     height: 60px;
@@ -44,7 +58,8 @@ a {
 .hero-1 {
     background-image: url(../img/homepage/hero-1.png);
     background-size: cover;
-    height: 645px;
+    height: 100vh;
+    width: 100%;
 }
 .typo-1-s1 {
     font-weight: 700;
@@ -53,7 +68,7 @@ a {
     margin-top: 20px;
 }
 .typo-2-s1 {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
 }
@@ -100,9 +115,6 @@ a {
     height: 457px;
     width: 573px;
 }
-.s2 {
-    padding-left: 100px;
-}
 .typo-primary {
     font-weight: 500;
     font-size: 35px;
@@ -136,7 +148,7 @@ a {
     background-image: url(../img/homepage/hero-map.svg);
     background-size: cover;
     height: 537px;
-    width: 1060px;
+    max-width: 1060px;
 }
 
 /* SECTION 5 */
