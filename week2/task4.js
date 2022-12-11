@@ -1,3 +1,5 @@
+// Validasi teks harus lebih dari 2 huruf
+
 function isPalindrome (string){
     let string_new = string.replace(/[^\w]/g, '').toLowerCase(); // regular expression
     
@@ -5,18 +7,21 @@ function isPalindrome (string){
     let msg = '' 
 
     for (let i = 0; i < len/2; i++){
-        if (string[i] !== string[len - 1 - i]){
-            msg = 'bukan palindrom'
+        if (len <= 2){
+            msg = 'Teks harus lebih dari 2 huruf!'
+        } else if (string[i] !== string[len - 1 - i]){
+            msg = 'Bukan Palindrome'
         } else {
-            msg = 'adalah palindrom'
+            msg = 'Palindrome'
         }
     }
     console.log(`${string}: ${msg}`);
 }
 
-isPalindrome('malam')
+isPalindrome('ma')
 
-// malAM
-// Racecar
+// ma
+// malam
+// RACEcar
 // Was it a cat i saw
 // A man, a plan, a canal, panama
