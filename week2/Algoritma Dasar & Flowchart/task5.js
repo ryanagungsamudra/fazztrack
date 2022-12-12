@@ -2,25 +2,31 @@
 
 function vowelsReplace (string){
     // String validation
-    if (typeof string != typeof ""){
-        return console.log('Tipe data teks harus string!')
+    if (typeof string != typeof 'string'){
+        let msg = 'Tipe data teks harus string dan tidak boleh kosong!'
+        return msg; 
     }
     
     // Main function
-    let arrString = string.split('')
-
+    let arrString = string.toLowerCase().split('')
     let len = arrString.length; //jumlah string yang di input
-    let replaceVowels = []
+    let newArr = []
 
     for (i = 0; i < len; i++){
         if (arrString[i] === 'a'){
-            replaceVowels.push('o')
+            newArr.push('o')
         } else {
-            replaceVowels.push(arrString[i])
+            newArr.push(arrString[i])
         }
     }
-    let result = replaceVowels.join('')
-    console.log(result)
+    let result = newArr.join('')
+    return result;
 }
 
-vowelsReplace("padang panjang")
+console.log(vowelsReplace("PADANG dan SurAbaya"))
+
+// null
+// undefined
+// 123
+// true
+// false

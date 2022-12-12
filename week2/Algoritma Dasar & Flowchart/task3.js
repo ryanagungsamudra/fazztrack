@@ -9,32 +9,25 @@
 function unCalc (matematika, bahasaIndonesia, bahasaInggris, ilmuPengetahuanAlam){
 
     const average = (matematika+bahasaIndonesia+bahasaInggris+ilmuPengetahuanAlam)/4
-    let warning = ''
-    let msgAverage = ''
-    let msgGrade = ''
 
     if (matematika == null || bahasaIndonesia == null || bahasaInggris == null || ilmuPengetahuanAlam == null){
-        warning = 'Semua Nilai Harus Terisi!'
+        console.log('Semua Nilai Harus Terisi!')
     } else if (average >= 90){
-        msgAverage = `Rata-rata = ${average}`
-        msgGrade = 'Grade = A'
+        console.log(`Rata-rata = ${average}`)
+        console.log('Grade = A')
     } else if (average >= 80){
-        msgAverage = `Rata-rata = ${average}`
-        msgGrade = 'Grade = B'
+        console.log(`Rata-rata = ${average}`)
+        console.log('Grade = B')
     } else if (average >= 70){
-        msgAverage = `Rata-rata = ${average}`
-        msgGrade = 'Grade = C'
+        console.log(`Rata-rata = ${average}`)
+        console.log('Grade = C')
     } else if (average >= 60){
-        msgAverage = `Rata-rata = ${average}`
-        msgGrade = 'Grade = D'
+        console.log(`Rata-rata = ${average}`)
+        console.log('Grade = D')
     } else {
-        msgAverage = `Rata-rata = ${average}`
-        msgGrade = 'Grade = E'
+        console.log(`Rata-rata = ${average}`)
+        console.log('Grade = E')
     }
-    console.log(warning);
-    console.log(msgAverage);
-    console.log(msgGrade);
-    
 }
 
 unCalc (80, 85, 90, 89)
