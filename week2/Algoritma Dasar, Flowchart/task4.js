@@ -9,11 +9,9 @@ function checkPalindrome(string){
         if (len <= 2){
             return msg = 'Teks harus lebih dari 2 huruf!'
         } else if( newString[i] !== newString[len-1-i]){
-            return msg = "bukan palindrome"
-        } else {
-            return msg = "palindrome"  
-        }
-        
+            return msg = "Bukan palindrome"
+        } 
+        return msg = "Palindrome"  
     }
 }
 console.log(checkPalindrome('ma'))
