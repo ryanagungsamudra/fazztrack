@@ -9,25 +9,28 @@
 function unCalc (matematika, bahasaIndonesia, bahasaInggris, ilmuPengetahuanAlam){
 
     const average = (matematika+bahasaIndonesia+bahasaInggris+ilmuPengetahuanAlam)/4
+    let avg = ''
+    let grade = ''
 
     if (matematika == null || bahasaIndonesia == null || bahasaInggris == null || ilmuPengetahuanAlam == null){
-        console.log('Semua Nilai Harus Terisi!')
+        return warn = 'Semua Nilai Harus Terisi!'
     } else if (average >= 90){
-        console.log(`Rata-rata = ${average}`)
-        console.log('Grade = A')
+        avg = `Rata-rata = ${average}`
+        grade = 'Grade = A'
     } else if (average >= 80){
-        console.log(`Rata-rata = ${average}`)
-        console.log('Grade = B')
+        avg = `Rata-rata = ${average}`
+        grade = 'Grade = B'
     } else if (average >= 70){
-        console.log(`Rata-rata = ${average}`)
-        console.log('Grade = C')
+        avg = `Rata-rata = ${average}`
+        grade = 'Grade = C'
     } else if (average >= 60){
-        console.log(`Rata-rata = ${average}`)
-        console.log('Grade = D')
+        avg = `Rata-rata = ${average}`
+        grade = 'Grade = D'
     } else {
-        console.log(`Rata-rata = ${average}`)
-        console.log('Grade = E')
+        avg = `Rata-rata = ${average}`
+        grade = 'Grade = E'
     }
+    return (`${avg}\n${grade}`)
 }
 
-unCalc (80, 85, 90, 89)
+console.log(unCalc (80, 85, 90, 89))

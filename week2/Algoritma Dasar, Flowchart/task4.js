@@ -3,7 +3,6 @@
 function checkPalindrome(string){
     let newString = string.replace(/[^\w]/g, '').toLowerCase();
     let len = newString.length;
-    let msg = ''
 
     for( let i = 0; i < len/2; i++){
         if (len <= 2){
@@ -14,10 +13,10 @@ function checkPalindrome(string){
         return msg = "Palindrome"  
     }
 }
-console.log(checkPalindrome('ma'))
+console.log(checkPalindrome('malam'))
 
 // ma
-// malam malam
+// malam
 // kasur RUSAK
-// Was it a cat i saw
 // A man, a plan, a canal, panama
+// 2_A3*3#A2
