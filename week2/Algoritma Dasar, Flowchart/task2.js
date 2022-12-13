@@ -3,16 +3,16 @@ const biodata = {
     age : 23,
     hobbies : ['Bermain gitar', 'Futsal', 'Basket'],
     isMarried : false,
-    schoolList : {
+    schoolList : [{
         yearIn : 2018,
         yearOut : 2022,
         major : 'Geomatics Engineer',
-    },
-    skill : {
+    }],
+    skill : [{
         skillName : 'surveyor',
         level : 'advanced',
-    },
+    }],
     interestInCoding : true
 }
 
-console.log(biodata)     
+console.log(biodata)

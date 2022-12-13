@@ -13,10 +13,8 @@ function checkPalindrome(string){
         return msg = "Palindrome"  
     }
 }
-console.log(checkPalindrome('malam'))
-
-// ma
-// malam
-// kasur RUSAK
-// A man, a plan, a canal, panama
-// 2_A3*3#A2
+console.log(checkPalindrome('ma')) // validasi <= 2 huruf
+console.log(checkPalindrome('kasur RUSAK'))
+console.log(checkPalindrome('Ryan Agung')) // bukan palindrome
+console.log(checkPalindrome('A man, a plan, a canal, panama'))
+console.log(checkPalindrome('2_A3*3#A2'))

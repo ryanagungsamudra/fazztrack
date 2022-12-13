@@ -23,10 +23,12 @@ function vowelsReplace (string){
     return result;
 }
 
+// VALIDASI
+console.log(vowelsReplace())
+console.log(vowelsReplace(null))
+console.log(vowelsReplace(undefined))
+console.log(vowelsReplace(12345))
+console.log(vowelsReplace(true))
+console.log(vowelsReplace(false))
+// TEST CASE
 console.log(vowelsReplace("PADANG dan SurAbaya"))
-
-// null
-// undefined
-// 123
-// true
-// false
