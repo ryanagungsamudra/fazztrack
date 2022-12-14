@@ -2,7 +2,7 @@
 
 function vowelsReplace (string){
     // String validation
-    if (typeof string != typeof 'string'){
+    if (typeof string != typeof 'string' || string == ''){
         let msg = 'Tipe data teks harus string dan tidak boleh kosong!'
         return msg; 
     }
@@ -25,10 +25,10 @@ function vowelsReplace (string){
 
 // VALIDASI
 console.log(vowelsReplace())
+console.log(vowelsReplace(''))
 console.log(vowelsReplace(null))
 console.log(vowelsReplace(undefined))
 console.log(vowelsReplace(12345))
 console.log(vowelsReplace(true))
-console.log(vowelsReplace(false))
 // TEST CASE
 console.log(vowelsReplace("PADANG dan SurAbaya"))

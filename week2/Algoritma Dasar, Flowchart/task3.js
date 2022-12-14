@@ -9,10 +9,11 @@
 function unCalc (matematika, bahasaIndonesia, bahasaInggris, ilmuPengetahuanAlam){
 
     const average = (matematika+bahasaIndonesia+bahasaInggris+ilmuPengetahuanAlam)/4
+    let subjects = (matematika, bahasaIndonesia, bahasaInggris, ilmuPengetahuanAlam)
     let avg = ''
     let grade = ''
 
-    if (matematika == null || bahasaIndonesia == null || bahasaInggris == null || ilmuPengetahuanAlam == null || average > 100 || average < 0){
+    if (typeof subjects != typeof 1 || average > 100 || average < 0){
         return warn = 'Semua Nilai Harus Terisi dan Logis!'
     } else if (average >= 90){
         avg = `Rata-rata = ${average}`
@@ -32,9 +33,10 @@ function unCalc (matematika, bahasaIndonesia, bahasaInggris, ilmuPengetahuanAlam
     }
     return (`${avg}\n${grade}`)
 }
-
+// human error
 console.log(unCalc (52, 55, 53)) // Validasi, tdk blh kosong salah satu
-console.log(unCalc (101, 101, 101, 101)) // human error
+console.log(unCalc (101, 101, 101, 101)) // lebih dari 100 atau kurang dari 0
+// function test
 console.log(unCalc (90, 95, 90, 93))
 console.log(unCalc (80, 85, 90, 89))
 console.log(unCalc (72, 75, 70, 73))

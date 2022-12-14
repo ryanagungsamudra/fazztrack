@@ -4,6 +4,7 @@ const biodata = {
     hobbies : ['Bermain gitar', 'Futsal', 'Basket'],
     isMarried : false,
     schoolList : [{
+        name : 'UPN Yogyakarta',
         yearIn : 2018,
         yearOut : 2022,
         major : 'Geomatics Engineer',
