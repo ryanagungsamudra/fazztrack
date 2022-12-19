@@ -1,20 +1,36 @@
-// PROGRAM 1
-// https://codesyariah122.github.io/javascript-promise/
+// PROGRAM 1 (than catch) : Menampilkan list biodata pemain Madrid dari API
+let getUsers = (json) => {
+	fetch(json)
+		.then((data) => data.json())
+		.then((result) => {
+			result.forEach(res => {
+				console.log(res.name, res.age, res.nation)
+			})
+		})
+		.catch((err) => console.log(err))
+}
+// getUsers("https://639fe7117aaf11ceb8a2b9a7.mockapi.io/RealMadrid")
 
-let success = true;
-
-const Promises = new Promise((resolve, reject) => {
-	if(success){
-		resolve('promises has been kept')
-	}else{
-		reject('promise not kept')
+// PROGRAM 2 (try catch): pembatasan umur ketika masuk website
+const ageRestricted = async (age) => {
+	try {
+		// condition   
+		if (await age >= 21) {
+			console.log(`Your age is ${age}. You can enter`)
+		}
+		// custom error
+		if (age == "") throw "You didn't enter anything!"
+		if (isNaN(age)) throw age + " isn't a number"
+		if (age < 21) throw "Your need to be 21+ to enter!"
 	}
-})
-
-Promises
-.then(res => console.log(`Ok ${res} !`))
-.catch(res => console.log(`Its Ok ! ${res}`))
-
-// PROGRAM 2
-const endpoint = "https://gist.githubusercontent.com/Phonbopit/1d0a87c56066c4bcf043/raw/f95eb3e1196bc8d9a38bebba4f104bcc6e51ac38/Player.json"
-fetch(endpoint)
+	catch (error) {
+		console.log(error)
+	}
+	finally {
+		console.log("Thanks for visitting")
+	}
+}
+// ageRestricted(23)
+// ageRestricted(20)
+// ageRestricted("Ryan Agung")
+// ageRestricted("")
