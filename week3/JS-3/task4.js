@@ -1,15 +1,22 @@
 // PROGRAM 1 (than catch) : Menampilkan list biodata pemain Madrid dari API
-let getUsers = (json) => {
+const getUsers = (json) => {
 	fetch(json)
-		.then((data) => data.json())
+		.then((response) => {
+			if (response.ok) {
+				return response.json()
+			} else {
+				return Promise.reject('Link isn\'t appropriate or something was wrong! Please check your REST API!')
+			}
+		})
 		.then((result) => {
 			result.forEach(res => {
 				console.log(res.name, res.age, res.nation)
 			})
 		})
-		.catch((err) => console.log(err))
+		.catch((error) => console.log(`Error : ${error}`))
 }
-// getUsers("https://639fe7117aaf11ceb8a2b9a7.mockapi.io/RealMadrid")
+// getUsers("https://639fe7117aaf11ceb8a2b9a7.mockapi.io/RealMadridx")
+
 
 // PROGRAM 2 (try catch): pembatasan umur ketika masuk website
 const ageRestricted = async (age) => {
