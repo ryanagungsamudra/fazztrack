@@ -1,6 +1,6 @@
 // Buatlah program menggunakan method fetch untuk menampilkan semua name (hanya name nya saja) dari REST API dibawah ini https://jsonplaceholder.typicode.com/users Gunakan debugger console bawaan browser Chrome untuk melihat hasilnya
-const loadData = (json) => {
-    fetch(json)
+const loadData = () => {
+    fetch("https://jsonplaceholder.typicode.com/users/")
         .then((response) => {
             if (response.ok){
                 return response.json()
@@ -27,24 +27,27 @@ const loadData = (json) => {
         })
         .catch((error) => console.log(`Error : ${error}`))
 }
-// loadData("https://jsonplaceholder.typicode.com/users/")
+// loadData()
 
 
 // Mas Tova challenge => pake async/await
 const getData = async () => {
     try {
-
         // fetching
-        const url = await fetch("https://jsonplaceholder.typicode.com/users/");
+        const response = await fetch("https://jsonplaceholder.typicode.com/users/")
+        // error handling
+        if (!response.ok) {
+            throw new Error(`${response.status}`);
+        }
         // tampilkan data
         let userData = []
-        userData = await url.json();
+        userData = await response.json();
         loadUserData(userData)
-
     } catch (err) {
-        console.log(`Waduhh error nih => ${err}`)
+        console.log(`Waduh error nih guys\n${err}`)
     }
 }
+
 const loadUserData = (data) => {
     const output = data.map((el) => {
         return el.name

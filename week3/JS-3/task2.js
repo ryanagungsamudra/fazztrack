@@ -15,19 +15,19 @@ const cekHariKerja = (day) => {
 }
 
 // Then catch 
-// cekHariKerja('senin')
-//     .then(res => console.log(res, 'adalah hari kerja'))
-//     .catch(e => console.log(e))
+    cekHariKerja('senin')
+        .then(result => console.log(result, 'adalah hari kerja'))
+        .catch(error => console.log(error))
 
 // try catch
-    // (async () => {
-    //     try {
-    //         let result = await cekHariKerja('sabtu')
-    //         console.log(result, 'adalah hari kerja')
-    //     } catch (e) {
-    //         console.log(e)
-    //     }
-    // })()
+    (async () => {
+        try {
+            let result = await cekHariKerja('senin')
+            console.log(result, 'adalah hari kerja')
+        } catch (error) {
+            console.log(error)
+        }
+    })()
 
 // PENGGUNAAN THEN CATCH & TRY CATCH
 // Didalam javascript terdapat 2 cara utama untuk mengatasi (handle) asynchronous, yakni menggunakan then/catch (ES6) dan async/await (ES7). Untuk penggunaannya yakni tergantung bagaimana kita ingin meng-handle promise. Jika menggunakan await maka tinggal diinput kedalam try/catch, apabila tidak menggunakan await maka gunakan .then() kemudian .catch().

@@ -1,6 +1,6 @@
 // PROGRAM 1 (than catch) : Menampilkan list biodata pemain Madrid dari API
-const getUsers = (json) => {
-	fetch(json)
+const getUsers = () => {
+	fetch("https://639fe7117aaf11ceb8a2b9a7.mockapi.io/RealMadrid")
 		.then((response) => {
 			if (response.ok) {
 				return response.json()
@@ -15,7 +15,7 @@ const getUsers = (json) => {
 		})
 		.catch((error) => console.log(`Error : ${error}`))
 }
-// getUsers("https://639fe7117aaf11ceb8a2b9a7.mockapi.io/RealMadridx")
+// getUsers()
 
 
 // PROGRAM 2 (try catch): pembatasan umur ketika masuk website
